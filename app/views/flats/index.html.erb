@@ -1,0 +1,12 @@
+<h1>ALL FLATS</h1>
+
+<div class="row">
+  <% @flats.each do |flat| %>
+  <div class="col-md-4">
+    <div class="card">
+      <h4><%= link_to flat.name, flat_path(flat) %></h4>
+      <p><%= flat.description %></p>
+    </div>
+  </div>
+  <% end %>
+</div>
